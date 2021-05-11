@@ -1,0 +1,10 @@
+.container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 100vw;
+}
+
+// medium screens
+@media (max-width: 1265px){
+    img {
+        margin: 0!important;
+    }
+}
