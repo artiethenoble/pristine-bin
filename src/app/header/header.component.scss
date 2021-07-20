@@ -6,8 +6,20 @@
     right: 2em;
 }
 
-// @media (max-width: 575.98px){
-//     .signin{
-//         left: 30%;
-//     }
-// }
+@media (max-width: 575.98px){
+    .signin{
+        right: 0.5em;
+    }
+}
+
+.container{
+    margin: 0;
+}
+
+.pristine{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+}
