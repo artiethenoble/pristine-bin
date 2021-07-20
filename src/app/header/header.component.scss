@@ -1,10 +1,13 @@
-.container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 100vw;
+.signin{
+    margin-bottom: 1em; 
+    margin-top: 1.5em; 
+    position: absolute; 
+    // width: 80%;
+    right: 2em;
 }
 
-// medium screens
-@media (max-width: 1265px){
-    img {
-        margin: 0!important;
-    }
-}
+// @media (max-width: 575.98px){
+//     .signin{
+//         left: 30%;
+//     }
+// }

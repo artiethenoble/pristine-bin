@@ -1,28 +1,32 @@
 .header{
-    height: 5em; background-color: silver; background-image: url('../assets/silver2.jpg') ;  background-size: cover;
-}
-
-.mt-auto{
     height: 5em; 
     background-color: silver; 
-    background-image: url('../assets/silver2_c.jpg'); 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('../assets/silver2.jpg') ;  
+    background-size: cover;
+    display: flex;
 }
 
-.right-nav-button{
-    position: absolute;
-    right: 1em;
-    top: 45vh;
-    width: 2em;
-    height: 2em;
-}
+// .mt-auto{
+//     height: 5em; 
+//     background-color: silver; 
+//     background-image: url('../assets/silver2_c.jpg'); 
+//     background-repeat: no-repeat; 
+//     background-size: cover; 
+//     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+// }
 
-.left-nav-button{
-    position: absolute;
-    left: 1em;
-    top: 45vh;
-    width: 2em;
-    height: 2em;
-}
+// .right-nav-button{
+//     position: absolute;
+//     right: 1em;
+//     top: 45vh;
+//     width: 2em;
+//     height: 2em;
+// }
+
+// .left-nav-button{
+//     position: absolute;
+//     left: 1em;
+//     top: 45vh;
+//     width: 2em;
+//     height: 2em;
+// }
