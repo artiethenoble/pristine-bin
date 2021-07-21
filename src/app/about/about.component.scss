@@ -1,12 +1,39 @@
-.container{
+// .container{
+//     background-image: url("../../assets/flower.jpg");
+//     background-size: cover; 
+//     // background-size: 100%;
+//     // background-repeat: no-repeat;  
+//     background-color: #bebebe; 
+//     margin-left: 0; 
+//     margin-right: 0; 
+//     width: 100vw; 
+//     height: 82vh;
+//     max-width: 100vw;
+// }
+
+
+.about{
     background-image: url("../../assets/flower.jpg");
     background-size: cover; 
-    // background-size: 100%;
-    // background-repeat: no-repeat;  
+    background-repeat: repeat;  
     background-color: #bebebe; 
     margin-left: 0; 
     margin-right: 0; 
-    width: 100vw; 
-    height: 82vh;
-    max-width: 100vw;
+    width: 100%; 
+    height: 100%;
+}
+@font-face {
+    font-family: lato;
+    src: url(../../assets/fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf) format("opentype");
+  }
+
+// mobile devices
+@media (max-width: 575.98px){
+    .socials{
+        right: 0;
+    }
+
+    .about{
+        background-size: contain; 
+    }
 }
