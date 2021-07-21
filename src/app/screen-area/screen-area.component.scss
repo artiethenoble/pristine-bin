@@ -1,6 +1,6 @@
 .screen-area{
     background-image: url('../../assets/swan2.jpg');  
-    background-size: cover; 
+    background-size: 100% 100%; 
     background-repeat: no-repeat;  
     background-color: #bebebe; 
     margin-left: 0; 
@@ -12,3 +12,14 @@
     font-family: lato;
     src: url(../../assets/fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf) format("opentype");
   }
+
+// mobile devices
+@media (max-width: 575.98px){
+    .socials{
+        right: 0;
+    }
+
+    .screen-area{
+        background-size: 160% 100%; 
+    }
+}

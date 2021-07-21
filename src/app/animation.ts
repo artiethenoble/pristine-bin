@@ -25,9 +25,6 @@ trigger('openClose', [
     transition(':enter', [
       style({ 
         transform: 'translateX(-100%)' , 
-      //   opacity: 0.2,
-      //   backgroundImage: '../assets/swan2.jpg',
-      //   backgroundColor: 'yellow',
       }),
       animate(1000)
     ]),
