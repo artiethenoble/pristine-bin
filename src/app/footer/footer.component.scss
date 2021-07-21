@@ -2,3 +2,29 @@
     background-color: silver;
     height: 100%;
 }
+
+.socials{
+    margin-bottom: 1em; 
+    margin-top: 1.5em; 
+    position: absolute; 
+    right: 2em;
+}
+
+.container{
+    margin: 0;
+}
+
+// mobile devices
+@media (max-width: 575.98px){
+    .socials{
+        right: 0;
+    }
+}
+
+.footer-text{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-weight: 100;
+}
