@@ -1,7 +1,7 @@
 <app-header class="header"></app-header>
 <!-- <div class="some"> -->
   <div class="container-fluid p-0">
-    <div style="height:100%" [@openClose]="isOpen ? 'open' : 'closed'">
+    <div style="height: 100%;" [@openClose]="isOpen ? 'open' : 'closed'">
       <router-outlet #outlet="outlet"></router-outlet>
       <img class="right-nav-button"  (click)="navigateForward()" src="../assets/right-arrow.png">
       <img class="left-nav-button"  (click)="navigateBackward()" src="../assets/left-arrow.png">

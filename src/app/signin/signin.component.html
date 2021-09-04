@@ -1,17 +1,10 @@
 
 <!-- login card -->
-<div class="container">
-
-    <!-- <div *ngIf="error" class="alert">
-        <img src="assets/exclamation.png" style="height: inherit; width: 10%;">
-        <div style="text-align: center;margin: auto; font-size: 1.1em;">Please ensure the login credentials are correct</div>
-        <img src="assets/close.png" style="height: inherit; width: 10%;" (click)="toggleAlert()">
-    </div> -->
-    
+<div class="sign-in-div">    
     <mat-card class="login-card">
         <mat-card-header>
             
-                <mat-card-title class="login-title">Welcome to <br> Pristine Bin </mat-card-title>
+                <mat-card-title class="login-title">Welcome</mat-card-title>
                 <mat-card-subtitle>Please Sign in</mat-card-subtitle>
             
         </mat-card-header>
@@ -21,24 +14,27 @@
             <div class="login-card-content">
                 <!-- <mat-spinner *ngIf="loading" style="margin: auto; top: 45%; position: absolute; left: 45%;"></mat-spinner> -->
                 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
-                    <mat-form-field>
-                        <mat-label>Username</mat-label>
-                        <input matInput formControlName="username" placeholder="a232234">
-                        <mat-error *ngIf="loginForm.get('username').hasError('required')">
-                            Username is <strong>required</strong>
-                        </mat-error>
-                    </mat-form-field>
+                    <div>
+                        <div style="margin:auto; width: 81%">
+                            <mat-form-field>
+                                <mat-label>Username</mat-label>
+                                <input matInput formControlName="username" placeholder="username">
+                                <mat-error *ngIf="loginForm.get('username').hasError('required')">
+                                    Username is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
 
-                    <mat-form-field>
-                        <mat-label>Password</mat-label>
-                        <input matInput formControlName="password" type="password" placeholder="*********">
-                        <mat-error *ngIf="loginForm.get('password').hasError('required')">
-                            Password is <strong>required</strong>
-                        </mat-error>
-                    </mat-form-field>
-
-                    <button mat-button class="cancel" type="reset" outline>Cancel</button>
-                    <button mat-button class="sign-in" raised primary type="submit" style="outline: none; box-shadow: none;">Sign in</button>
+                            <mat-form-field>
+                                <mat-label>Password</mat-label>
+                                <input matInput formControlName="password" type="password" placeholder="*********">
+                                <mat-error *ngIf="loginForm.get('password').hasError('required')">
+                                    Password is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <button mat-button class="sign-in-button" raised primary type="submit" style="outline: none; box-shadow: none;">Sign in</button>
+                    <button mat-button class="cancel-button" type="reset" outline>Cancel</button>
                 </form>
             </div>
         </mat-card-content>

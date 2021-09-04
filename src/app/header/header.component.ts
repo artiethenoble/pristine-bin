@@ -19,4 +19,8 @@ export class HeaderComponent implements OnInit {
   signUp(){
     this.router.navigateByUrl("signup")
   }
+
+  routeHome(){
+    this.router.navigateByUrl("home")
+  }
 }

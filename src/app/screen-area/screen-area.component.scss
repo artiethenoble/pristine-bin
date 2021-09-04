@@ -8,6 +8,13 @@
     width: 100%; 
     height: 100%;
 }
+
+#landing-page-info-div{
+    position: relative; 
+    top: 6em; 
+    width: 15em; 
+    margin-left: 10em;
+}
 @font-face {
     font-family: lato;
     src: url(../../assets/fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf) format("opentype");
@@ -21,5 +28,10 @@
 
     .screen-area{
         background-size: 160% 100%; 
+    }
+
+    #landing-page-info-div{
+        margin: 0;
+        width: auto;
     }
 }
