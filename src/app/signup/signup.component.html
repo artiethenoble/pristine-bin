@@ -15,18 +15,32 @@
                     <div>
                         <div style="margin:auto; width: 81%">
                             <mat-form-field>
-                                <mat-label>Username</mat-label>
+                                <mat-label>Name</mat-label>
                                 <input matInput formControlName="username" placeholder="username">
                                 <mat-error *ngIf="loginForm.get('username').hasError('required')">
-                                    Username is <strong>required</strong>
+                                    Name is <strong>required</strong>
                                 </mat-error>
                             </mat-form-field>
 
                             <mat-form-field>
-                                <mat-label>Password</mat-label>
+                                <mat-label>Surname</mat-label>
                                 <input matInput formControlName="password" type="password" placeholder="*********">
                                 <mat-error *ngIf="loginForm.get('password').hasError('required')">
-                                    Password is <strong>required</strong>
+                                    Surname is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-label>Cell Phone</mat-label>
+                                <input matInput formControlName="password" type="password" placeholder="*********">
+                                <mat-error *ngIf="loginForm.get('password').hasError('required')">
+                                    Cell Phone is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-label>Email</mat-label>
+                                <input matInput formControlName="password" type="password" placeholder="*********">
+                                <mat-error *ngIf="loginForm.get('password').hasError('required')">
+                                    Email is <strong>required</strong>
                                 </mat-error>
                             </mat-form-field>
                         </div>
