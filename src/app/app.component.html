@@ -3,10 +3,23 @@
   <div class="container-fluid p-0">
     <div style="height: 100%;" [@openClose]="isOpen ? 'open' : 'closed'">
       <router-outlet #outlet="outlet"></router-outlet>
-      <img class="right-nav-button"  (click)="navigateForward()" src="../assets/right-arrow.png">
-      <img class="left-nav-button"  (click)="navigateBackward()" src="../assets/left-arrow.png">
+      <!-- <img class="right-nav-button"  (click)="navigateForward()" src="../assets/right-arrow.png"> -->
+      <!-- <img class="left-nav-button"  (click)="navigateBackward()" src="../assets/left-arrow.png"> -->
     </div>
   </div>
 <!-- </div> -->
   <!-- <screen-area class="screen-area"></screen-area> -->
 <app-footer class="mt-auto"></app-footer>
+
+<button class="arrow left" (click)="navigateBackward()">
+  <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+	45.63,75.8 0.375,38.087 45.63,0.375 "/>
+  </svg>  
+</button>
+<button class="arrow right" (click)="navigateForward()">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+	0.375,0.375 45.63,38.087 0.375,75.8 "/>
+  </svg>
+</button>
