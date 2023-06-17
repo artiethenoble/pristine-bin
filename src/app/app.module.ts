@@ -11,11 +11,10 @@ import { ScreenAreaComponent } from './screen-area/screen-area.component';
 import { RouterModule } from '@angular/router';
 import { PricingComponent } from './pricing/pricing.component';
 import { AboutComponent } from './about/about.component';
-import { SigninComponent } from './signin/signin.component';
-import { SignupComponent } from './signup/signup.component';
 import {MatCardModule} from '@angular/material';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ProfileComponent } from './profile/profile.component';
 
 // MDB Angular Free
 // import { MDBBootstrapModule } from 'angular-bootstrap-md';
@@ -29,8 +28,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ScreenAreaComponent,
     PricingComponent,
     AboutComponent,
-    SigninComponent,
-    SignupComponent
+    ProfileComponent,
 
   ],
   imports: [
@@ -41,11 +39,10 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatButtonModule,
     RouterModule.forRoot([
       {path: 'home', component: ScreenAreaComponent, data: {animation: 'homeTransition'}},
+      {path: 'profile', component: ProfileComponent},
       {path: 'about', component: AboutComponent, data: {animation: 'aboutTransition'}},
       {path: 'pricing', component: PricingComponent, data: {animation: 'pricing'}},
       {path: '',  redirectTo: '/home', pathMatch: 'full'},
-      {path: 'signin', component: SigninComponent},
-      {path: 'signup', component: SignupComponent}
     ]),
     MatCardModule,
     MatFormFieldModule,
